@@ -12,7 +12,8 @@
 export XDG_CONFIG_HOME="$HOME"/.config
 export XDG_CACHE_HOME="$HOME"/.cache
 export XDG_DATA_HOME="$HOME"/.local/share
-export XDG_DATA_DIRS="$HOME"/.local/share
+# I HAVE NO FUCKING CLUE WHY, but for some fucking reason, when this var is set, plasmashell will ALWAYS crash.
+#export XDG_DATA_DIRS="$HOME"/.local/share
 
 #Tell things to put their crap in XDG dirs
 export GNUPGHOME="$XDG_CONFIG_HOME"/gnupg
@@ -35,5 +36,4 @@ export TERMINAL="konsole"
 export BROWSER="firefox"
 
 # This line will run your xinitrc if you log in on TTY1 and X11 is not already running
-# Only uncomment it if you want that funcitonality
-#[ "$(tty)" = "/dev/tty1" ] && ! pgrep -x Xorg >/dev/null && exec startx "$XDG_CONFIG_HOME/X11/xinitrc" vt1
+[ "$(tty)" = "/dev/tty1" ] && ! pgrep -x Xorg >/dev/null && exec startx "$XDG_CONFIG_HOME/X11/xinitrc" vt1
