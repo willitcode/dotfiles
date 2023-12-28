@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Slightly customized version of Luke Smith's wallpaper script: https://youtu.be/IUvM2Hc6jtk
+
+[ -d "$1" ] && cp "$(find "$1"/*{.jpg,.JPG,.jpeg,.JPEG,.png,.PNG} -type f | shuf -n 1)" ~/pix/wallpaper.png
+[ -f "$1" ] && cp "$1" ~/pix/wallpaper.png
+
+xwallpaper --zoom ~/pix/wallpaper.png

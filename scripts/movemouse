@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# This is probably the dumbest thing I've ever written. It automatically moves your mouse around just a tiny bit every second so your computer won't go to sleep. It's because I hate those stupid "caffiene" tray apps, I'd much rather do it the way macOS does it and have a command that you run in the terminal that will keep your computer awake as long as it's running. Unfortunately, I'm not smart enough to write a tool that does such a thing beyond this.
+
+while :
+do
+    xdotool mousemove 1 1
+    xdotool mousemove 1 2
+    xdotool mousemove 2 2
+    xdotool mousemove 2 1
+    sleep 1
+done

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# This is old and not used anymore. (It's a dumb way of doing it :P)
+
+sed -i "s/^gtk-theme-name.*/gtk-theme-name=Adwaita-dark/" /home/nacl10/.config/gtk-3.0/settings.ini
+sed -i "s/^gtk-theme-name.*/gtk-theme-name=Adwaita-dark/" /home/nacl10/.config/gtk-4.0/settings.ini
+sed -i "s/^gtk-theme-name.*/gtk-theme-name=Adwaita-dark/" /home/nacl10/.config/gtk-2.0/gtkrc
+
+dunstify -t 5000 "Your GTK theme has been updated. Please restart all GTK applications."
+for run in {1..5}; do printf '\7'; sleep 0.2; done

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Script to run all my startup stuff with Plasma. It does both background tasks (like Hydroxide, the open-source, command-line only ProtonMail bridge) and desktop apps. The reason it does desktop apps is because I want them on particular workspaces. (unfortunately the "particular workspaces" thing doesn't seem to work too well.
+
+# Hydroxide needs to be started before Thunderbird so Thunderbird can connect to it
+hydroxide serve &
+kstart5 --desktop 2 discord
+kstart5 --desktop 2 spotify
+kstart5 --desktop 2 thunderbird
+sleep 1
+kstart5 --desktop 1 firefox
+python3 ~/scripts/autodarkmode.py

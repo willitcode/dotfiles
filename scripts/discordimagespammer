@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# This is set up with the correct timings to spam an image in Discord (and avoid the "chill zone")
+
+while :
+do
+xdotool keydown ctrl
+xdotool key v
+xdotool keyup ctrl
+sleep 1
+xdotool key Return
+sleep 3
+done

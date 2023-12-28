@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# This cycles through the different benchmarks available in the "ramspeed" tool. It's available in the AUR if you're on Arch.
+# I could probably make it get you results from each test and average them out or give you the best/worst or something like that, I'm just too lazy and I don't know how (My knowledge of BASH is not nearly as extensive as my knowledge of Python, but Python is wayyyy to heavy for this)
+
+for i in {1..18}
+do
+    ramspeed -b $i
+done

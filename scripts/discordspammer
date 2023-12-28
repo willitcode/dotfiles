@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# This is set up with the correct timings to spam a message in Discord while avoiding the "chill zone"
+
+while :
+do
+xdotool keydown ctrl
+xdotool key v
+xdotool keyup ctrl
+xdotool key Return
+sleep 3
+done

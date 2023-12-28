@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# If I ever get around to finishing this script, it should spam any wifi (or ethernet if you change the interface name) network that tracks what devices are/have ever connected to it (most do) with a bunch of garbage devices
+
+sudo -S ip link set wlp3s0 down
+hexchars="0123456789ABCDEF"
+end=$( for i in {1..6} ; do echo -n ${hexchars:$(( $RANDOM % 16 )):1} ; done | sed -e 's/\(..\)/:\1/g' )
+sudo -S ip link set wlp3s0 address "00:60:2F$end"
+sudo hostnamectl set-hostname random-garbage
+sudo -S ip link set wlp3s0 up
+

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# This is left over from when I used to run i3. It makes workspace 4 tabbed. I'm only leaving it here because, unlike most of the other stuff from that time, it's actually written pretty well. (I'm pretty sure it's copy-pasted from Stack Overflow or something)
+
+currentworkspace=$(i3-msg -t get_workspaces | jq '.[] | select(.focused==true).name' | cut -d"\"" -f2)
+
+i3-msg workspace number 4
+i3-msg layout tabbed
+
+i3-msg workspace number $currentworkspace

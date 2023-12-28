@@ -1,0 +1,11 @@
+#!/bin/bash
+
+while :
+do
+xdotool keydown ctrl
+xdotool key v
+xdotool keyup ctrl
+xdotool key Return
+# Sleep for a little bit because otherwise it's too fast and everything breaks
+sleep 0.2
+done

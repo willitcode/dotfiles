@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# "Fullscreen" version of sw
+
+now=$(date +%s)sec; watch -n0.1 -p TZ=UTC date --date now-$now +%H:%M:%S.%N

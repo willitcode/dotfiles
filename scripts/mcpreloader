@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# This is supposed to "pre-generate" a Minecraft world. However, it doesn't seem to work, at least on the Bedrock edition of the game. It might work on the Java edition, I believe it's basically a conversion of the AutoHotKey script in this video: https://youtu.be/eA35S2GW-jI
+
+##############
+### CONFIG ###
+##############
+# Delay between each TP
+tpdelay="10" # Seconds
+
+# Delay between each keypress (when typing the commands)
+keydelay="100" # Milliseconds
+
+# Delay between when the chat is opened and the script starts typing things
+chatdelay="1" # Seconds
+
+# Delay before the script starts actually doing anything (so that you can tab into your minecraft or whatever)
+startupdelay="3" # Seconds
+##############
+
+sleep "$startupdelay"
+
+# TP to the first position
+xdotool key t; sleep "$chatdelay"
+xdotool type --delay "$keydelay" "/tp @p -2880 192 -2880"; xdotool key Return
+# C style for loops because the regular BASH ones wern't working :P
+for ((i=0;i<3;i++)); do
+    for ((x=0;x<4;x++)); do
+        # Rotation commands
+        sleep "$tpdelay"
+        xdotool key t; sleep "$chatdelay"
+        xdotool type --delay "$keydelay" "/tp @p ~ ~ ~ -90 20"; xdotool key Return
+        sleep "$tpdelay"
+        xdotool key t; sleep "$chatdelay"
+        xdotool type --delay "$keydelay" "/tp @p ~ ~ ~ 0 20"; xdotool key Return
+        sleep "$tpdelay"
+        xdotool key t; sleep "$chatdelay"
+        xdotool type --delay "$keydelay" "/tp @p ~ ~ ~ 90 20"; xdotool key Return
+        sleep "$tpdelay"
+        xdotool key t; sleep "$chatdelay"
+        xdotool type --delay "$keydelay" "/tp @p ~ ~ ~ 180 20"; xdotool key Return
+        # Move us along in the chain
+        sleep "$tpdelay"
+        xdotool key t; sleep "$chatdelay"
+        # Sleeping in between the commands on this one because occasionally MC will miss the last tilde with this one. Only this line though, so I'm not doing for the rest.
+        xdotool type --delay "$keydelay" "/tp @p ~240 ~ ~"; sleep "0.1"; xdotool key Return
+    done
+    # Step down to the next chain
+    sleep "$tpdelay"
+    xdotool key t; sleep "$chatdelay"
+    xdotool type --delay "$keydelay" "/tp @p -2880 192 ~240"; xdotool key Return
+done

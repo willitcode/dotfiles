@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Script to spoof the MAC address on my laptop. Don't ask why.
+
+echo "Current MAC address for interface wlp3s0:"
+ip link | grep ether | awk '{print $2}' | tail -n1
+sudo -S ip link set wlp3s0 down
+sudo -S ip link set wlp3s0 address 0c:4d:e9:b5:31:c2
+sudo -S ip link set wlp3s0 up
+echo "New (hopefully spoofed) MAC address for interface wlp3s0:"
+ip link | grep ether | awk '{print $2}' | tail -n1
+
+echo "Current MAC address for interface enp0s25:"
+ip link | grep ether | awk '{print $2}' | head -n1
+sudo -S ip link set enp0s25 down
+sudo -S ip link set enp0s25 address D0:11:22:33:44:55
+sudo -S ip link set enp0s25 up
+echo "New (hopefully spoofed) MAC address for interface enp0s25:"
+ip link | grep ether | awk '{print $2}' | head -n1
