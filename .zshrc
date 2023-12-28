@@ -10,7 +10,7 @@
 HISTFILE=~/.cache/zsh/histfile
 HISTSIZE=1000
 SAVEHIST=1000
-setopt autocd beep
+setopt autocd beep correct
 unsetopt extendedglob
 
 # Vim mode stuffs
