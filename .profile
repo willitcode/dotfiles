@@ -34,5 +34,5 @@ export EDITOR="vim"
 export TERMINAL="cool-retro-term"
 export BROWSER="firefox"
 
-#Start i3 if on tty1 and i3 is not already running
-[ "$(tty)" = "/dev/tty1" ] && ! pgrep -x Xorg >/dev/null && exec startx "$XDG_CONFIG_HOME/X11/xinitrc" vt1
+# This line will run your xinitrc if you log in on TTY1 and X11 is not already running
+#[ "$(tty)" = "/dev/tty1" ] && ! pgrep -x Xorg >/dev/null && exec startx "$XDG_CONFIG_HOME/X11/xinitrc" vt1
