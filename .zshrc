@@ -44,6 +44,7 @@ export LS_COLORS
 #Aliases
 alias clh="cd ~; clear"
 alias starwars="telnet towel.blinkenlights.nl"
+alias rs="rsync --info=progress2"
 
 #Show paleofetch & uname because why not
 uname -a
