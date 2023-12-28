@@ -1,0 +1,75 @@
+# i3blocks config file
+#
+# Please see man i3blocks for a complete reference!
+# The man page is also hosted at http://vivien.github.io/i3blocks
+#
+# List of valid properties:
+#
+# align
+# color
+# command
+# full_text
+# instance
+# interval
+# label
+# min_width
+# name
+# separator
+# separator_block_width
+# short_text
+# signal
+# urgent
+
+# Global properties
+#
+# The top properties below are applied to every block, but can be overridden.
+# Each block command defaults to the script name to avoid boilerplate.
+# Change $SCRIPT_DIR to the location of your scripts!
+separator_block_width=15
+markup=none
+
+# Supported players are: spotify, vlc, audacious, xmms2, mplayer, and others.
+[unamebar]
+command=$SCRIPT_DIR/unamebar/unamebar
+interval=3600
+
+[mediaplayer]
+command=$SCRIPT_DIR/mediaplayer/mediaplayer
+instance=spotify
+interval=1
+signal=10
+
+[arch-update]
+command=$SCRIPT_DIR/arch-update/arch-update
+interval=3600
+markup=pango
+
+[volume]
+command=$SCRIPT_DIR/volume/volume
+label= 
+interval=1
+signal=10
+#STEP=5%
+
+[cpu_usage]
+command=$SCRIPT_DIR/cpu_usage/cpu_usage
+label=CPU 
+interval=10
+
+[memory]
+command=$SCRIPT_DIR/memory/memory
+label=RAM 
+separator=false
+interval=10
+
+[battery]
+command=$SCRIPT_DIR/battery/battery
+label= 
+interval=30
+
+[time]
+command=date '+%a %m-%d-%Y %I:%M:%S %p'
+interval=1
+
+[wifi]
+command=$SCRIPT_DIR/wifi/wifi

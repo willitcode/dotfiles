@@ -1,0 +1,11 @@
+[$Version]
+update_info=delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize
+
+[Keyboard]
+KeyboardRepeating=0
+NumLock=2
+RepeatDelay=303
+RepeatRate=30.91
+
+[Mouse]
+cursorTheme=WhiteSur-cursors

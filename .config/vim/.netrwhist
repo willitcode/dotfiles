@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/nacl10/.local/share/awesomewidgets/desktops'
+let g:netrw_dirhist_6='/home/nacl10/.config/spicetify'
+let g:netrw_dirhist_5='/home/nacl10/.local/share/plasma/desktoptheme/breeze-light-red/widgets'
+let g:netrw_dirhist_4='/home/nacl10/docs/logrelay/.git'
+let g:netrw_dirhist_3='/home/nacl10/.config/X11'
+let g:netrw_dirhist_2='/home/nacl10/.config'
+let g:netrw_dirhist_1='/home/nacl10/.config/i3blocks/temperature'
