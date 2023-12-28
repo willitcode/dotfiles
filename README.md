@@ -13,6 +13,8 @@ It's recommended to place the `.zsh` file at `/usr/share/zsh/plugins/zsh-syntax-
 Optional dependancies:
  - [xdotool](https://www.semicomplete.com/projects/xdotool/)  
  Used in many of my scripts for automated keyboard/mouse input
+ - [libinput-gestures](https://github.com/bulletmark/libinput-gestures)  
+ These dotfiles have a config that allows you to switch between workspaces with a three- or four-finger swipe
  - [ramspeed](https://github.com/cruvolo/ramspeed-smp)  
  Very much optional, used in my memory testing script
 
