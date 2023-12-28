@@ -24,7 +24,6 @@ export VIMINIT=":source $XDG_CONFIG_HOME"/vim/vimrc
 export LESSKEY="$XDG_CONFIG_HOME"/less/lesskey
 export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
 export WGETRC="$XDG_CONFIG_HOME/wgetrc"
-export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc
 export XSERVERRC="$XDG_CONFIG_HOME"/X11/xserverrc
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
