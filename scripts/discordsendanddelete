@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Sleep for a hot second so we have time to click on the discord window before the script runs itself again xD
+sleep 1
+
+xdotool key Return
+sleep 0.2
+xdotool key Up
+sleep 0.1
+xdotool key ctrl+a
+sleep 0.1
+xdotool key BackSpace
+sleep 0.1
+xdotool key Return
+sleep 0.1
+xdotool key Return
