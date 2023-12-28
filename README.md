@@ -22,7 +22,7 @@ Optional dependancies:
 Clone the repo
 ```
 cd ~
-git clone https://github.com/NaCl10/dotfiles
+git clone https://github.com/willitcode/dotfiles
 ```
 
 Bring the dotfiles out of the cloned folder
