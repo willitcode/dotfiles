@@ -20,7 +20,7 @@ git clone https://github.com/NaCl10/dotfiles
 Bring the dotfiles out of the cloned folder
 ```
 cd dotfiles
-cp ./.* ~
+cp -r ./.* ~
 ```
 
 Remove the .git folder that got copied out with the dotfiles (you DO NOT want a git repo in your home folder, that'll cause all sorts of problems)
