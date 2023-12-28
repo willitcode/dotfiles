@@ -51,9 +51,9 @@ uname -a
 echo ''
 
 # You may set this to paleofetch_laptop or paleofetch_desktop if you are on a desktop or laptop running Arch. You may have issues with the battery displaying properly when on a laptop, if you do, recompile paleofetch (<repository root>/paleofetch/laptop)
-paleofetch_server
+#paleofetch_server
 #paleofetch_desktop
-#paleofetch_laptop
+paleofetch_laptop
 # If you are not running Arch, just use neofetch
 #neofetch
 

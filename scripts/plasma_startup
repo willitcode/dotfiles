@@ -4,10 +4,10 @@
 
 # Hydroxide needs to be started before Thunderbird so Thunderbird can connect to it
 hydroxide serve &
-kstart5 --desktop 2 discord
-kstart5 --desktop 2 spotify
-kstart5 --desktop 2 thunderbird
+kstart5 --desktop 3 discord
+kstart5 --desktop 3 spotify
+kstart5 --desktop 3 thunderbird
 sleep 1
-kstart5 --desktop 1 firefox
+kstart5 --desktop 2 firefox
 python3 ~/scripts/autodarkmode.py &
 ~/scripts/polybar_run &
