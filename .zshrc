@@ -48,7 +48,14 @@ alias starwars="telnet towel.blinkenlights.nl"
 #Show paleofetch & uname because why not
 uname -a
 echo ''
-paleofetch 
+
+# You may set this to paleofetch_laptop or paleofetch_desktop if you are on a desktop or laptop running Arch. You may have issues with the battery displaying properly when on a laptop, if you do, recompile paleofetch ((repository root)/paleofetch/laptop)
+paleofetch_server
+#paleofetch_desktop
+#paleofetch_laptop
+# If you are not running Arch, just use neofetch
+#neofetch
+
 # Warn the user of different ls colors (I'll get confused otherwise lol)
 CYAN='\033[01;36m'
 MAGENTA='\033[01;35m'
