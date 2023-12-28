@@ -1,0 +1,26 @@
+#  __   __   _       __            _ _       
+#  \ \ / /  | |     / _|          | | |      
+#   \ V / __| | ___| |_ __ _ _   _| | |_ ___ 
+#    > < / _` |/ _ \  _/ _` | | | | | __/ __|
+# _ / . \ (_| |  __/ || (_| | |_| | | |_\__ \
+#(_)_/ \_\__,_|\___|_| \__,_|\__,_|_|\__|___/
+#  (Literally just used to configure urxvt)
+
+#Terminal config
+URxvt*transparent: true
+#Darken the background color
+URxvt*shading: 35
+#Font color
+URxvt*foreground: White
+#Background color
+URxvt*background: Black
+#Disable STUPID scrollbar
+URxvt*scrollBar: false
+
+#FONTS
+URxvt*font: xft:Iosevka:pixelsize=12:antialias=true:hinting=true
+URxvt*boldFont: xft:Iosevka:bold:pixelsize=12:antialias=true:hinting=true
+
+Xcursor.theme: WhiteSur-cursors
+
+Xcursor.size: 18

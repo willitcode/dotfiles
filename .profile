@@ -12,6 +12,7 @@
 export XDG_CONFIG_HOME="$HOME"/.config
 export XDG_CACHE_HOME="$HOME"/.cache
 export XDG_DATA_HOME="$HOME"/.local/share
+export XDG_DATA_DIRS="$HOME"/.local/share
 
 #Tell things to put their crap in XDG dirs
 export GNUPGHOME="$XDG_CONFIG_HOME"/gnupg
@@ -29,9 +30,9 @@ export XSERVERRC="$XDG_CONFIG_HOME"/X11/xserverrc
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
 
 # Set default apps and such
-export EDITOR="vim"
+export EDITOR="nvim"
 export TERMINAL="konsole"
 export BROWSER="firefox"
 
 # This line will run your xinitrc if you log in on TTY1 and X11 is not already running
-#[ "$(tty)" = "/dev/tty1" ] && ! pgrep -x Xorg >/dev/null && exec startx "$XDG_CONFIG_HOME/X11/xinitrc" vt1
+[ "$(tty)" = "/dev/tty1" ] && ! pgrep -x Xorg >/dev/null && exec startx "$XDG_CONFIG_HOME/X11/xinitrc" vt1

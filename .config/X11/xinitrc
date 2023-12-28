@@ -6,13 +6,18 @@
 #(_)_/\_\_|_| |_|_|\__|_|  \___|
 #      (Executed by startx)
 
+# Holy fuck this file is old
+
 # Start i3
 #exec /usr/bin/i3
 export DESKTOP_SESSION=plasma
 #export KDEWM=/usr/bin/i3
 exec startplasma-x11
 
+#exec startlxqt
+
 #setwallpaper ~/pix/slideshow  # Select & display a random wallpaper from ~/pix/slideshow
 
 # Set path because otherwise things like dmenu won't see my custom scripts folder
+# LOL I don't even use dmenu anymore
 export PATH=$PATH:/home/nacl10/scripts/

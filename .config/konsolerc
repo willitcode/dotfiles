@@ -1,19 +1,17 @@
 [Desktop Entry]
-DefaultProfile=Profile 2.profile
-
-[Favorite Profiles]
-Favorites=
-
-[KonsoleWindow]
-SaveGeometryOnExit=false
+DefaultProfile=
 
 [MainWindow]
-DP-1 LVDS-1 XPosition=634
-DP-1 LVDS-1 YPosition=405
-HDMI-2 LVDS-1 XPosition=482
-HDMI-2 LVDS-1 YPosition=107
-LVDS-1 XPosition=783
-LVDS-1 YPosition=29
-State=
+DVI-D-0 HDMI-0 Height 1024x768=509
+DVI-D-0 HDMI-0 Width 1024x768=775
+DVI-D-0 HDMI-0 XPosition 1024x768=0
+DVI-D-0 HDMI-0 YPosition 1024x768=29
+HDMI-0 DVI-D-0 Height 1920x1080=509
+HDMI-0 DVI-D-0 Width 1920x1080=775
+HDMI-0 DVI-D-0 XPosition 1024x768=0
+HDMI-0 DVI-D-0 XPosition 1920x1080=228
+HDMI-0 DVI-D-0 YPosition 1024x768=29
+HDMI-0 DVI-D-0 YPosition 1920x1080=314
+State=AAAA/wAAAAD9AAAAAAAAAwcAAAGxAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHABzAGUAcwBzAGkAbwBuAFQAbwBvAGwAYgBhAHIBAAAC3/////8AAAAAAAAAAA==
+StatusBar=Disabled
 ToolBarsMovable=Disabled
-Window-Maximized 900x1600=true

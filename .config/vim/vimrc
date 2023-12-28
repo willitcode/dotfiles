@@ -23,9 +23,13 @@ set number
 " Plugins (vim-plug)
 call plug#begin('~/.config/vim/plugged')
 " I can't get vimdiscord to behave for some reason
-"Plug 'vbe0201/vimdiscord'
+Plug 'vbe0201/vimdiscord'
 Plug 'junegunn/goyo.vim'
+Plug 'dpelle/vim-LanguageTool'
 call plug#end()
+
+" Set the location of my LanguageTool jar
+let g:languagetool_jar='~/docs/languagetool/languagetool-commandline.jar'
 
 " Use four spaces instead of tabs
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
