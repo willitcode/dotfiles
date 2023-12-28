@@ -1,0 +1,17 @@
+#!/bin/bash
+
+death() {
+    xdotool mouseup 1
+    exit 0
+}
+
+trap 'death' TERM INT QUIT SIGKILL SIGTERM
+
+sleep 1
+
+xdotool mousedown 1
+
+while :
+do
+    sleep 1000
+done

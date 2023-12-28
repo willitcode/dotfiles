@@ -35,4 +35,5 @@ export TERMINAL="konsole"
 export BROWSER="firefox"
 
 # This line will run your xinitrc if you log in on TTY1 and X11 is not already running
-[ "$(tty)" = "/dev/tty1" ] && ! pgrep -x Xorg >/dev/null && exec startx "$XDG_CONFIG_HOME/X11/xinitrc" vt1
+# Only uncomment it if you want that funcitonality
+#[ "$(tty)" = "/dev/tty1" ] && ! pgrep -x Xorg >/dev/null && exec startx "$XDG_CONFIG_HOME/X11/xinitrc" vt1

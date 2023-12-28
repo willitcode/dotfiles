@@ -1,0 +1,4 @@
+#!/bin/bash
+
+plasmashell --replace &
+~/scripts/polybar_run

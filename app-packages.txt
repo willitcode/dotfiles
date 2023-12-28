@@ -1,0 +1,35 @@
+docker
+anbox # Currently I'm using anbox-image-gapps-rooted, maybe I'd be better off without using gapps
+dnscrypt-proxy
+libvirt # Along with QEMU/KVM, virt-manager, etc.
+cups
+jack # Along with cadence and the other necessary shit to deal with it and pulse
+audacity
+discord
+spotify
+thunderbird
+gparted
+partitionmanager # KDE partition manager
+handbrake
+htop
+kdenlive
+konsole
+pcmanfm-qt
+minecraft bedrock
+minecraft java
+obs
+mixxx
+pavucontrol-qt
+steam
+teamspeak
+vlc
+woeusb
+wireshark
+zoom
+ark
+cool-retro-term
+colorpicker
+ksysgaurd
+spectacle
+tor browser
+transmission
