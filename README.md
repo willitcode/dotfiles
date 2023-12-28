@@ -6,7 +6,7 @@ My dotfiles. They're configured how I like them.
 
 Deal with dependencies.
 
-[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)  
 It's recommended to place the `.zsh` file at `/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh`. However, you may change the last line of `.zshrc` if you (or your package manager) prefer to put it somewhere else.
 
 There is some config in here for KDE, it's honestly a bit of a mess. One of these days I'll get around to setting up Polybar and that should fix most of the issues.
