@@ -334,15 +334,15 @@ exec hydroxide serve
 
 # Stuff to run every time i3 is restarted (including inplace restarts, not including config reloads)
 # Spoof MAC address to bypass Circle
-exec_always /home/nacl10/scripts/spoofmacaddress
+exec_always ~/scripts/spoofmacaddress
 # Launch Polybar
-exec_always /home/nacl10/scripts/polybar_run
+exec_always ~/scripts/polybar_run
 # Deal with my external display
 #exec_always xrandr -q | grep "HDMI1 connected" && xrandr --output HDMI1 --auto --left-of LVDS1 --primary
 #exec_always xrandr -q | grep "HDMI2 connected" && xrandr --output HDMI2 --auto --left-of LVDS1 --primary
 #exec_always xrandr -q | grep "HDMI2 disconnected" && xrandr --output HDMI2 --off && xrandr --output LVDS1 --primary
 # Set workspace 4 to be tabbed
-exec_always sleep 12; /home/nacl10/scripts/make4tabbed
+exec_always sleep 12; ~/scripts/make4tabbed
 # Set wallpaper
 exec_always sleep 0.5; ~/scripts/setwallpaper ~/pix/slideshow
 

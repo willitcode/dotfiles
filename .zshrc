@@ -16,7 +16,7 @@ unsetopt extendedglob
 # Vim mode stuffs
 bindkey -v
 # Completion
-zstyle :compinstall filename '/home/nacl10/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 autoload -Uz compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist

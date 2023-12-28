@@ -30,7 +30,7 @@ alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
 
 # Set default apps and such
 export EDITOR="vim"
-export TERMINAL="cool-retro-term"
+export TERMINAL="konsole"
 export BROWSER="firefox"
 
 # This line will run your xinitrc if you log in on TTY1 and X11 is not already running
