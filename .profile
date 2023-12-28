@@ -8,14 +8,12 @@
 #  |_|  
 #         (runs on login)
 
-# So apparently these aren't getting set by default, so I have to do it manually...
+# Set XDG dirs
 export XDG_CONFIG_HOME="$HOME"/.config
 export XDG_CACHE_HOME="$HOME"/.cache
 export XDG_DATA_HOME="$HOME"/.local/share
-# I HAVE NO FUCKING CLUE WHY, but for some fucking reason, when this var is set, plasmashell will ALWAYS crash.
-#export XDG_DATA_DIRS="$HOME"/.local/share
 
-#Tell things to put their crap in XDG dirs
+#Tell things to put stuff in XDG dirs
 export GNUPGHOME="$XDG_CONFIG_HOME"/gnupg
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc

@@ -3,7 +3,7 @@
 # A stupid script to type ctrl+shift+u and 2014 to insert an em-dash for me because I'm lazy like that
 # It's stupid and this is almost certainly not how you're supposed to do this, but this is what I could cobble together in 5 minutes out of boredom and necessity.
 
-# KDE fucks itself and switches workspaces if we don't do this because the user is usually still holding down super
+# KDE switches workspaces if we don't sleep here because the user is usually still holding down super
 # Note that this isn't foolproof, the user still needs to let go of super quickly, it just makes it humanly possible to do so.
 sleep 0.1
 xdotool key ctrl+shift+u

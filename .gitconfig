@@ -1,8 +1,8 @@
 # This is Git's per-user configuration file.
 [user]
 # Please adapt and uncomment the following lines:
-        #name = NaCl10
-        #email = nacl10@example.com
+        #name = willitcode
+        #email = willitcode@example.com
 [advice]
 	addIgnoredFile = false
 [init]

@@ -307,7 +307,7 @@ exec sleep 1; thunderbird
 assign [class="firefox"] $ws3
 assign [class="discord"] $ws4
 assign [class="Thunderbird"] $ws4
-for_window [class="spotify"] move container to workspace $ws4 #Somehow, this is broken. Spotify's linux client is a piece of crap.
+for_window [class="spotify"] move container to workspace $ws4 #Somehow, this is broken
 
 # Reccomended when using i3 with KDE (which I am)
 for_window [title="Desktop — Plasma"] kill; floating enable; border none
@@ -333,8 +333,6 @@ exec dunst
 exec hydroxide serve
 
 # Stuff to run every time i3 is restarted (including inplace restarts, not including config reloads)
-# Spoof MAC address to bypass Circle
-exec_always ~/scripts/spoofmacaddress
 # Launch Polybar
 exec_always ~/scripts/polybar_run
 # Deal with my external display
