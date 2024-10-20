@@ -1,0 +1,21 @@
+#!/bin/bash
+
+exit_function() {
+    gsettings set org.gnome.desktop.session idle-delay $blankTime
+    gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type 'suspend'
+    gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'suspend'
+    exit
+}
+
+trap 'exit_function' SIGINT SIGTERM
+
+blankTime=`gsettings get org.gnome.desktop.session idle-delay | cut -d ' ' -f 2`
+
+gsettings set org.gnome.desktop.session idle-delay 0
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type 'nothing'
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
+
+while :
+do
+    sleep 1000
+done
